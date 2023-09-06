@@ -1,0 +1,52 @@
+*{ font-family: 'Franklin Gothic Medium'}
+/*el asterisco es un selector universal es decir tomara todos los elementos de la página*/
+
+h2 { font-family: 'Times New Roman'; color: aqua;}
+/*Solo selecciona la etiqueta que estamos indicando en el selector */
+
+.card{background-color: violet;} /*para llamar un selector de tipo clase usar un punto al principio/*
+
+/*Parte de section */
+section{
+    width: 70%;
+    background-color: cornflowerblue;
+    float: left;
+    margin: 10px;
+}
+
+/*Parte de article */
+article{
+    margin: 0.5em 3em 0em 0em;
+    padding: 0.5em 2em;
+    background-color: crimson;
+    border: 10px solid black;
+    /*top, right, botton, left cuando tiene los 4 elementos*/
+    /*se aplica a todo cuando tiene 1 elemento*/
+} 
+
+aside{
+    width: 25%;
+    float: left;
+    background-color: darkgoldenrod;
+}
+
+footer{
+    background-color: blueviolet;
+    width: auto;
+    height: 60px;
+    text-align: center;
+    padding: 50px;
+    clear: both;
+}
+
+
+
+/*Medidas absolutas: Pixeles son medidas que no van a cambiar en el 
+proyecto y se escriben "px" */
+/*Medidas relativas: em se utiliza para hacer referecia a la fuente 
+del navegador, rem se adapta a la fuente raiz del html*/
+/*Medidas flexibles: vw se calcula respectoa al ancho del viewport 
+(ejemplo: 100vw es igual al 100% de la ventanna), 
+    vh se calcula respecto a la altura del view port
+    vmin/vmax se calculan frente al ancho del viewport */
+

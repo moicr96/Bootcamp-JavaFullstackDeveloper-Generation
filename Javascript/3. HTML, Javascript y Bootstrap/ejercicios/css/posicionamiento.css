@@ -1,0 +1,25 @@
+.box{
+    display: inline-block ;
+    width: 100px; /*Ancho*/
+    height: 100px;/*Altura*/
+    background: pink; /*Fondo*/
+    color: white;/*Color texto*/
+    }
+
+    #three{
+        position: absolute; /*static, absolute, relative, fixed, sticky*/
+        top: 200px;
+        left: 200px;
+        background: palevioletred;
+    }
+
+.texto1{
+    width: 600px;
+    height: 400px;
+    overflow: visible; /*visible, hidden, scroll, auto*/
+    padding-left: 150px;
+    position: absolute; /*static, absolute, relative, fixed, sticky*/
+    top: 200px;
+    left: 200px;
+       
+}

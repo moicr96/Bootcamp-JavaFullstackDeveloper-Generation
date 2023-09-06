@@ -1,0 +1,24 @@
+/*Menú*/
+nav{
+    background-color: orchid;
+    width: auto;
+    height: 50px;
+    word-spacing: 10px;
+    text-align: center;
+    padding: 25px;
+    margin: 10px;
+
+
+}
+a{
+    text-decoration: none;
+    color: beige;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+a:active{                          /*hover, link, visited, */
+    background-color: dodgerblue;
+    border-radius: 20px;
+    padding: 15px;
+}

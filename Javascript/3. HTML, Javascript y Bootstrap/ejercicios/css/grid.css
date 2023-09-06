@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    min-height: 100%; /*indica aqui el minimo de altura que queremos que tenga*/
+}
+html{height: 100%;} /*indica aqui que esta permitido que los item del grid ocupen el 100% de la pagina*/
+
+.grid-container *{ /*todo lo que este dentro se le va a agregar esos cambios*/
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.header1{
+    grid-area: header1;
+    background: cornflowerblue;
+}
+
+.navbar{
+    grid-area: navbar;
+    background: blueviolet;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background: coral;
+}
+
+.main{
+    grid-area: main;
+    background: hotpink;
+}
+
+.footer1{
+    grid-area: footer1;
+    background: mediumpurple;
+}
+
+/*teléfono*/
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "header1"
+    "navbar"
+    "main"
+    "sidebar"
+    "footer1"
+    ;
+}
+
+/*tablet*/
+@media(min-width:600px) {
+   .grid-container{
+        grid-template-columns: 150px auto;
+        grid-template-rows: 100px 50px auto 100px;
+        grid-template-areas: 
+        "header1 header1" /*le estamos diciendo que ocupe dos columnas*/
+        "navbar navbar"
+        "sidebar main"
+        "footer1 footer1"
+        ;
+    }
+}
+
+/*escritorio*/
+@media(min-width:900px) {
+    .grid-container{
+         grid-template-columns: 200px auto;
+         grid-template-rows: 100px 50px auto 100px;
+         grid-template-areas: 
+         "header1 header1 header1" /*le estamos diciendo que ocupe dos columnas*/
+         "navbar navbar navbar"
+         "sidebar sidebar main" /*"sidebar . main" un punto significa un espacio vacío*/
+         "footer1 footer1 footer1"
+         ;
+     }
+ }
+ 

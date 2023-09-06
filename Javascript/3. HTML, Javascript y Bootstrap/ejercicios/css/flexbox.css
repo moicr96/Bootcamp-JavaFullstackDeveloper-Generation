@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    flex-direction: row;        /* column, column-reverse, row, row-reverse */
+    /*flex-wrap: nowrap;*/             /*nowrap, wrap*/        /*solo activar uno; el flex-direction o el flex-wrap al mismo tiempo para ver que hace*/
+    
+    justify-content: space-around; /*center, flex-start, space-around*/
+    /*align-content: flex-start;*/ /*flex-start, center*/ /* solo activar uno; el justify-content o el align-content al mismo tiempo para ver que hace */
+
+}
+#one{
+    background-color: crimson;
+    width: 200px;
+    height: 200px;
+    flex-grow: 3; /*es qué tanto va a crecer, le decimos que crezca 3 veces su tamaño*/
+}
+#two{
+    background-color: greenyellow;
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0; /* le decimos que no se encoja tanto, que mantenga su tamaño */
+}
+#three{
+    background-color: rgb(102, 102, 199);
+    width: 200px;
+    height: 200px;
+    flex-basis: 300px; /* nos permite determinar la longitud de mi elemento */
+}

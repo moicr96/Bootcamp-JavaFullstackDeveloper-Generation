@@ -1,0 +1,21 @@
+*{ font-family: 'Franklin Gothic Medium'}
+
+h1 { font-family: 'Franklin Gothic Medium'; color: #FF9900    ;}
+h2 { font-family: 'Franklin Gothic Medium'; color: #FF9900    ;}
+h3 { font-family: 'Franklin Gothic Medium'; color: white    ;}
+
+h1 {
+    text-align:center;
+  }
+p {
+    text-align:center;
+  }
+
+section{
+    width: 40%;
+    background-color: #0099FF    ;
+    float: center;
+    margin: 100px;
+    border: 10px solid #FF9900;
+}
+
